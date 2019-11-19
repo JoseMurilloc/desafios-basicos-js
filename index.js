@@ -1,6 +1,6 @@
 /**
  * 
- *  ==> Mudando para arqivo JS 
+ *  ==> Mudando para arqivo JS
  * 
  */
 
@@ -64,25 +64,26 @@ function devsHabilidades(usuarios) {
   )
 }
 
+function chamar() {
+  devsHabilidades(usuarios);
+  
+  console.log(experiencia(2));
+  
+  
+  var skills = ["Javascript", "ReactJS", "React Native"];
+  const resposta = temHabilidade(skills); // true ou false
+  
+  console.log(resposta);
+  
+  console.log(numeroParOuImpa(12));
+  
+  const resultado = stringDataObject(endereco);
+  
+  if (resposta) {
+    console.log('Tem habilidades com JavaScript');
+  } else {
+    console.log('Não tem habilidades com JavaScript');
+  }
+}
 
-
-
-// devsHabilidades(usuarios);
-
-// console.log(experiencia(2));
-
-
-// var skills = ["Javascript", "ReactJS", "React Native"];
-// const resposta = temHabilidade(skills); // true ou false
-
-// console.log(resposta);
-
-// console.log(numeroParOuImpa(12));
-
-// const resultado = stringDataObject(endereco);
-
-// if (resposta) {
-//   console.log('Tem habilidades com JavaScript');
-// } else {
-//   console.log('Não tem habilidades com JavaScript');
-// }
+chamar();
