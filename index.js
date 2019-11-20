@@ -1,6 +1,6 @@
 /**
  * 
- *  ==> Mudando para arqivo JS
+ *  ==> Mudando para arquivo JS
  * 
  */
 
