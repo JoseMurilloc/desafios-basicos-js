@@ -34,19 +34,20 @@ function renderListRepos() {
   res 
     .then(function(response) {
       
-      
-      
       response.data.map(r => {
-        var reposElemento = document.createElement('li');
-        var text = document.createTextNode(r.full_name);
-        reposElemento.appendChild(text);
-        listElemento.appendChild(reposElemento);
-      })
-      
+          var reposElemento = document.createElement('li');
+          var text = document.createTextNode(r.full_name);
+          reposElemento.appendChild(text);
+          listElemento.appendChild(reposElemento);
+      });
+
+  
      
     })
     .catch(function(error) {
-      console.warn(error);
+      var notFound = document.createElement('li').appendChild(document.createTextNode('User not found'));
+      
+      listElemento.appendChild(notFound);
     });
 
 }
