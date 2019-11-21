@@ -19,13 +19,13 @@ var minhaPromise = function() {
 }
 
 
-minhaPromise()
+axios.get('https://api.github.com/users/JoseMurilloc')
   .then(function(response) {
     console.log(response);
   })
   .catch(function(error) {
     console.warn(error);
-  })
+  });
 
 
 // var xhr = new XMLHttpRequest();
